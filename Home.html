@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- CSS bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Home -->
+    <div class="home" id="home">
+        <div class="container">
+            <!-- Start Navigation -->
+            <div class="Navigation background-header wow slideInDown">
+                <div class="navbar navbar-expand-sm">
+                    <div class="container-xl container-fluid">
+                        
+                        <!-- Logo -->
+                        <a href="#" class="logo navbar-brand">
+                            <h1 class="text-uppercase text-white">logo</h1>
+                        </a>
+                        
+                        <!-- Search -->
+                        <form action="" class="search me-auto ps-3 position-relative d-none d-lg-block">
+                            <input class="rounded-pill p-2 ps-4" type="text" placeholder="Type Somethings">
+                            <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+                        </form>
+        
+                        <!-- Menu -->
+                        <button 
+                        class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                        <div class="xMenu container navbar-toggler-icon d-block d-md-none">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                        </button>
+                    
+                    <div class="collapse navbar-collapse list-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto list-unstyled">
+                                <li class="nav-item pe-md-2 ps-md-2 pe-1 ps-1 active-nav">
+                                    <a href="#Home" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item pe-md-2 ps-md-2 pe-1 ps-1 ">
+                                    <a href="#services" class="nav-link">Link 1</a>
+                                </li>
+                                <li class="nav-item pe-md-2 ps-md-2 pe-1 ps-1 ">
+                                    <a href="#courses" class="nav-link">Link 2</a>
+                                </li>
+                                <li class="nav-item pe-md-2 ps-md-2 pe-1 ps-1 ">
+                                    <a href="#team" class="nav-link">Link 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loginOrsign_button">
+                        <button id="signupBtnNav" type="submit">Register</button>
+                        <button id="loginBtnNav" type="submit">Login</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Navigation -->
+        </div>
+    </div>
+
+    <!-- JS File main -->
+    <script src="JS/main.js"></script>
+    <!-- JS File SignUp -->
+    <script type="module" src="JS/SignUp.js"></script>
+    <!-- JS File Login -->
+    <script type="module" src="JS/LogIn.js"></script>
+    <!-- JS bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

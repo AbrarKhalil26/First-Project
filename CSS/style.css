@@ -1,0 +1,187 @@
+/* ---------------------------------------------------- */
+/*                      Globel                          */
+/* ---------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body,.parent{
+    min-height: 100vh;
+}
+input, button{
+    width: 100%;
+}
+input{
+    border: 0;
+    border-bottom: 2px solid #ddd;
+    padding: 5px 0 10px 6px;
+    margin-bottom: 30px !important;
+    outline: none;
+}
+button{
+    font-weight: 500;
+}
+input::placeholder{
+    font-weight: 500;
+}
+img{
+    width: 25px;
+    margin-right: 5px;
+}
+.change_link{
+    color: rgba(0, 0, 0,60%);
+    font-size: 13px;
+}
+.link{
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+.active{
+    display: none !important;
+}
+/* ---------------------------------------------------- */
+/*                      Content                         */
+/* ---------------------------------------------------- */
+.parent{
+    background-image: radial-gradient(circle , #ffffff , #00ccff , #003366);
+    display: flex;
+    user-select: none;
+}
+/* ---------------------------------------------------- */
+/*                      Create Account                  */
+/* ---------------------------------------------------- */
+.create,.login{
+    width: 500px;
+    border-radius: 15px;
+}
+.create h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+/* ==================================== */
+/*           Start  Navigation          */
+/* ==================================== */
+.Navigation{
+    background-color: #00ccff;
+    border-radius: 0 0 50px 50px;
+}
+/* ---------Start Search-------- */
+
+.navbar .search{
+    border-left: 1px solid rgba(255, 255, 255, 30%);
+}
+.navbar .search input{
+    border: 0;
+    background-color: rgba(255, 255, 255, 10%);
+}
+.navbar .search input::placeholder{
+    color: rgba(255, 255, 255, 50%);
+}
+.navbar .search svg{
+    top: 30%;
+    right: 8%;
+    color: rgba(255, 255, 255, 70%);
+}
+
+/* -----------End Search-------- */
+
+/* -----------Start Menu-------- */
+
+/* Icon Menu */
+.bar1,.bar2,.bar3{
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 20px;
+    background-color: white;
+}
+.bar1,.bar3{
+    width: 25px;
+    height: 3px;
+}
+.bar2{
+    width: 35px;
+    height: 4px;
+}
+
+.change-xMenu .bar1{
+    transform: translate(0, 11px) rotate(-45deg);
+    width: 35px;
+    height: 5px;
+}
+.change-xMenu .bar2{
+    opacity: 0;
+}
+.change-xMenu .bar3{
+    transform: translate(0, -11px) rotate(45deg);
+    width: 35px;
+    height: 5px;
+}
+/* Links Menu */
+.navbar .nav-link{
+    color: white;
+}
+.navbar .nav-link:hover{
+    color: rgba(255, 255, 255, 70%);
+}
+.navbar .active-nav{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 10%);
+}
+.navbar .nav-link:focus{
+    color: white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: 0 0 0 0;
+}
+@media (max-width: 666px) {
+    .navbar .logo h1{
+        font-size: 1.4rem;
+    }
+    .navbar .nav-link{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 575px) {
+    .navbar .logo h1{
+        font-size: 2rem;
+    }
+    .navbar .list-menu{
+        background-color: rgba(255, 255, 255, 0.912);
+        border-radius: 0 0 30px 30px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .navbar .nav-link{
+        color: initial;
+        border-bottom: 1px solid #ddd;
+    }
+    .navbar .last-link{
+        border: 0;
+    }
+    .navbar .active-nav{
+        background-color: white;
+        border-radius: 0 0 30px 30px;
+    }
+    .navbar .active-nav .nav-link{
+        color: #7a6ad8;
+    }
+    .navbar .nav-link:hover{
+        color: #7a6ad8;
+    }
+    .navbar .nav-link:focus{
+        color: #7a6ad8;
+    }
+}
+.fixed-menu{
+    top:0;
+    position: fixed;
+    background-color: #7a6ad8;
+    transition: 0.5s linear;
+}
+/* -----------End Menu-------- */
